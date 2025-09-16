@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Way</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chat.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="login.css">
+  
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Chats</h2>
+      <button id="addContactBtn"><i class="fa fa-user-plus"></i> Add Contact</button>
+      <ul id="chatList">
+        <li data-chat="john">Jacob Awinog-ya</li>
+        <li data-chat="mary">Francis Akur</li>
+        <li data-chat="alex">Vera Faithful</li>
+      </ul>
+    </aside>
+
+    <!-- Chat Window -->
+    <main class="chat-window">
+      <header id="chatHeader">
+        <span>Select a chat</span>
+        <div class="chat-actions">
+          <i class="fa fa-camera" id="cameraBtn" title="Camera"></i>
+        </div>
+        <header id="chatHeader">
+        <span>Welcome</span>
+      <div class="chat-actions">
+        <button id="logoutBtn">Logout</button>
+      </div>
+</header>
+
+      </header>
+
+      <div id="messages" class="messages"></div>
+
+      <div class="input-area">
+        <button id="callBtn">🎥</button>
+        <div id="callArea" style="display:none;">
+  <video id="localVideo" autoplay muted></video>
+  <video id="remoteVideo" autoplay></video>
+  <button id="endCallBtn">End Call</button>
+</div>
+        <button id="postBtn" title="Send photo/video"><i class="fa fa-paperclip"></i></button>
+        <input type="file" id="fileInput" accept="image/*,video/*" style="display: none;">
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button id="audioBtn" title="Record audio"><i class="fa fa-microphone"></i></button>
+        <button id="sendBtn">Send</button>
+      </div>
+    </main>
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ====== BODY ====== */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #11cbcb, #090224);
+}
+
+/* ====== FORM CONTAINER ====== */
+.form-container {
+  background: #fff;
+  padding: 2.8rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* ====== FORM TITLE ====== */
+.form-container h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.log{
+    border-radius: 4px;
+    background-color: #090224;
+    color: white;
+}
+
+/* ====== INPUT FIELDS ====== */
+.form-container input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-container input:focus {
+  border-color: #25fc98;
+  outline: none;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.3);
+}
+
+/* ====== BUTTON ====== */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1rem;
+  background: #fcfdff;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+  background: #033d0f;
+}
+
+/* ====== LINKS ====== */
+.form-container p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.form-container a {
+  color: #25fc69;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+
+.camera-preview {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.camera-box {
+  margin-top: 10px;
+}
+
+.camera-box button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.camera-box button:first-child {
+  background: #25d366;
+  color: white;
+}
+
+.camera-box button:last-child {
+  background: #ff4d4d;
+  color: white;
+}
+
+.camera-preview video {
+  max-width: 80%;
+  max-height: 70%;
+  border-radius: 10px;
+}
+
